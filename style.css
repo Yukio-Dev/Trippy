@@ -100,8 +100,8 @@ font-size:max(3vw,15px);
 }
 
 #hometext h3{
-margin-top: -40px;
-font-size: max(25px);
+margin-top: min(0.6vh,-10px);
+font-size: clamp(5px,4vw,25px);
 color: white;
 font-weight: 400;
 }
