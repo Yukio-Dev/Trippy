@@ -40,7 +40,7 @@ header{
 }
 
 .logo{
-    height: 50px;
+    max-height: 50px;
     transform: translate(-50px);
     margin: 0 0 0 70px;
 }
@@ -63,8 +63,9 @@ header li{
 header ul li a{
 text-decoration: none;
 color: white;
+font-size: 15px;
 font-weight: 700;
-padding: 6px 15px;
+padding: 5px;
 }
 
 header ul li a:hover,
@@ -81,25 +82,26 @@ header ul li a.active{
   text-align: center;
   justify-content: center;
   vertical-align:middle;
+  max-width: 100%;
 }
 
 #hometext h1{
-font-size: 170px;
+font-size: clamp(1rem,10vw,7rem);
 font-weight: 400;
 color: white;
 }
 
 #hometext h2{
 font-family: 'Josefin Sans', sans-serif;
-color: white;
+color: rgb(255, 255, 255);
 font-weight: 500;
-margin-bottom: -40px;
-font-size: 35px;
+margin-bottom: min(1.2vw,-20px);
+font-size:max(3vw,15px);
 }
 
 #hometext h3{
 margin-top: -40px;
-font-size: 25px;
+font-size: max(25px);
 color: white;
 font-weight: 400;
 }
@@ -141,11 +143,15 @@ section{
 .city img{
     height: 100px;
     transition: ease-in-out .1s;
+    margin-bottom: 5px;
 }
 
 .city img:hover{
-    height: 105px;
+    height: 110px;
     z-index: 10;
+    margin-bottom: -5px;
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 .container{
