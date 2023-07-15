@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body,html{
+
+background-color: rgb(20, 20, 20);
+background-size: 100%;
+background-repeat: no-repeat;
+min-height: 180vh;
+overflow-x: hidden;
+background-image: linear-gradient(to top, rgb(20, 20, 20) 0% ,rgb(20, 20, 20) 50%,rgba(2, 2, 2, 0.623) 55%  , rgba(0, 0, 0, 0.082) 58%,transparent 60% ), url("ressources/temple.jpg")
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgb(20, 20, 20, 0.95), rgba(20, 20, 20, 0.657) 50%,transparent 100%);
+    z-index: 1 ;
+}
+
+.logo{
+    height: 50px;
+    transform: translate(-50px);
+    margin: 0 0 0 70px;
+}
+
+
+
+header ul{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 20px;
+}
+
+header li{
+
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+text-decoration: none;
+color: white;
+font-weight: 700;
+padding: 6px 15px;
+}
+
+header ul li a:hover,
+header ul li a.active{
+
+    background-color: white;
+    color: black;
+    border-radius: 45px;
+}
+
+#hometext{
+
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  vertical-align:middle;
+}
+
+#hometext h1{
+font-size: 170px;
+font-weight: 400;
+color: white;
+}
+
+#hometext h2{
+font-family: 'Josefin Sans', sans-serif;
+color: white;
+font-weight: 500;
+margin-bottom: -40px;
+font-size: 35px;
+}
+
+#hometext h3{
+margin-top: -40px;
+font-size: 25px;
+color: white;
+font-weight: 400;
+}
+
+
+section{
+  position: relative;
+  margin-top: 94px;
+}
+
+
+#cities{
+    position: relative;
+    margin-top: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.city{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: 300;
+    margin-inline: 15px;
+}
+
+#cityText h2{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+}
+
+
+#cityText{
+    z-index: 1;
+}
+
+.city img{
+    height: 100px;
+    transition: ease-in-out .1s;
+}
+
+.city img:hover{
+    height: 105px;
+    z-index: 10;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.illustration img{
+
+    border-radius: 30px 0 0 30px;
+    width: 400px;
+}
+
+.text {
+    color: white;
+    height: 400px;
+    width: 600px;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 20px;
+    overflow-y: scroll;
+    
+}
+
+
+
+section#botton_info{
+    height: fit-content;
+    position: static;
+    top: 900px;
+  }
+  
+  #bottom_info div#bottom{
+    
+    border-top: solid white 1px;
+    background-color: black;
+    width: 100%;
+    padding: 30px 0 70px 0;
+  }
+  
+  #stackcontainer{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+  }
+  
+  #bottom_info div.li_contain{
+    
+    position: relative;
+    display: table-cell;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+  }
+  
+  #bottom_info div.li_contain img{
+    
+    width: 32px;
+    height: 32px;
+    margin: 6px;
+  }
+  
+  #bottom_info div.li_contain img:hover{
+    
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    transition: 0.2s;
+  }
+  
+  
+  #bottom_info li{
+    list-style: none;
+    top: 0;
+    width: fit-content;
+    
+  }
+
+  #bottom_info ul{
+    text-align: center;
+    justify-content: center;
+    position: flex ;
+
+  }
+  
+  #bottom_info a:hover{
+    color: white;
+  }
+  
+  section#bottom_info a{
+    text-decoration: none;
+    color: #50514e;
+    font-size: small;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  
+  section#bottom_info .list_title{
+    color: white;
+    font-weight: 600;
+    line-height: 3.5;
+    font-size: 1.2em;
+  }

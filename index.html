@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trippie</title>
+    <link rel="icon" href="ressources/paper-plane.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e0d43aa651.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <a href="#" ><img src="ressources/logo.png" alt="" class="logo"></a>
+
+       
+
+            
+
+            <ul>
+                 <li><a href="#" class="active">Home</a></li>
+                 <li><a href="#">About</a></li>
+                 <li><a href="#">Work</a></li>
+                 <li><a href="#">Contact</a></li>
+            </ul>
+    </header>
+
+    <section>
+    <div id="hometext">
+        <h2>日出ずる国</h2>
+        <H1>JAPAN</H1> 
+        <H3>take a closer look</H3>
+
+    </div>
+
+    <div id="cities">
+
+        <div class="city"><img src="ressources/tokyo.png" alt="" onclick=TOKYO();> <br>
+        TOKYO</div>
+        <div class="city"><img src="ressources/kyoto.png" alt="" onclick=KYOTO();> <br>
+        KYOTO</div>
+        <div class="city"><img src="ressources/nara.png" alt="" onclick=NARA();> <br>
+        NARA</div>
+        <div class="city"><img src="ressources/osaka.png" alt="" onclick=OSAKA();> <br>
+        OSAKA</div>
+
+    </div>
+
+
+
+    <script>
+        function TOKYO(){
+            document.getElementById('cityImage')
+            .src="ressources/tokyosquare.jpg";
+            document.getElementById('cityText')
+            .innerHTML="<h2>TOKYO</h2> <br>Capitale animée du Japon, Tokyo associe les styles ultramodernes et traditionnels, dans un mélange de gratte-ciel aux néons lumineux et de temples anciens. Le somptueux Meiji-jingū est un sanctuaire shinto réputé pour son entrée imposante et les bois qui l'environnent. Le palais impérial est entouré de vastes jardins publics. Les nombreux musées de la ville proposent des expositions allant de l'art classique, au musée national de Tokyo, à un théâtrekabuki reconstruit, au musée d'Edo-Tokyo.À l'origine, Tokyo était un petit village de pêcheurs nommé Edo (« l'estuaire »). Fortifié au xve siècle, Edo devient la base militaire du shogun Tokugawa Ieyasu à la fin du xvie siècle, puis la capitale de songouvernement féodal. Durant l’époque d'Edo (1603-1868), la ville se développe et devient l'une des plus peuplées au monde à la fin du xviiie siècle, avec une population de près d'un million d'habitants. Avec la restauration de l'empereur en 1868, elle est confortée dans son rôle de cœur politique du Japon : le château d'Edo devient la résidence de l'empereur Meiji (Kōkyo), et la ville acquiert son nom actuel par opposition à Kyoto, l'ancienne capitale. Elle est ravagée en 1923 par un séisme de magnitude 7,9 qui fait plus de 100 000 morts. Durant la Seconde Guerre mondiale, elle est détruite pour moitié par des bombardements aériens américains. Les bombes incendiaires embrasent la ville et font plus de 100 000 victimes. La ville est rapidement reconstruite après la guerre. Dans la seconde moitié du xxe siècle, Tokyo devient une métropole de rang mondial grâce à un fort développement industriel — notamment dans l'électronique—, et voit sa population multipliée par dix en cinquante ans.";
+        }
+         
+        function KYOTO(){
+            document.getElementById('cityImage')
+            .src="ressources/kyotosquare.jpeg";
+            document.getElementById('cityText')
+            .innerHTML="<h2>KYOTO</h2> <br>Ancienne capitale du Japon, Kyoto est une ville située sur l'île de Honshū. Elle est réputée pour ses nombreux temples bouddhistes classiques, ainsi que ses jardins, ses palais impériaux, ses sanctuaires shinto et ses maisons en bois traditionnelles. Sa renommée vient également de ses traditions comme la cuisine kaiseki, repas composé de plusieurs plats étudiés, et du district de Gion, le quartier des geishas (femmes proposant des prestations de divertissement).";
+        }
+
+        function NARA(){
+            document.getElementById('cityImage')
+            .src="ressources/narasquare.jpg";
+            document.getElementById('cityText')
+            .innerHTML="<h2>NARA</h2> <br>Au centre-sud de l'île d'Honshū, Nara est la capitale de la préfecture japonaise du même nom. La ville abrite des œuvres d'art et des temples importants qui remontent au VIIIe siècle, lorsqu'elle était la capitale du Japon. Des cerfs flânent dans le parc de Nara, où se trouve le temple Tōdai-ji. Le Daibutsu, le Bouddha en bronze de 15 m de haut du Tōdai-ji, est exposé dans une grande salle en bois. À l'est du parc se situe le sanctuaire shinto Kasuga Taisha, qui remonte à 768 apr. J.-C. et comprend plus de 3 000 lanternes.";
+        }
+
+        function OSAKA(){
+            document.getElementById('cityImage')
+            .src="ressources/osakasquare.jpg";
+            document.getElementById('cityText')
+            .innerHTML="<h2>OSAKA</h2> <br>Osaka est une grande ville portuaire et un centre commerçant de l'île japonaise d'Honshū. Elle est connue pour son architecture moderne, sa vie nocturne et la qualité de sa street food. Principal monument historique de la ville, le château d'Osaka, construit au XVIe siècle lors du shogunat, a subi plusieurs restaurations. Il est entouré de douves ainsi que d'un parc planté de pruniers, de pêchers et de cerisiers à fleurs. Le Sumiyoshi-taisha est l'un des plus anciens sanctuaires shinto du pays.";
+        }
+
+     </script>
+
+     
+
+    <div class="container">
+
+
+            <div class="illustration">
+                    <img src="ressources/tokyosquare.jpg" alt="" id="cityImage">
+
+
+            </div>
+            <div class="text" id="cityText">
+                <h2>TOKYO</h2> <br>
+                Capitale animée du Japon, Tokyo associe les styles ultramodernes et traditionnels, dans un mélange de gratte-ciel 
+                aux néons lumineux et de temples anciens. Le somptueux Meiji-jingū est un sanctuaire shinto réputé pour son entrée 
+                imposante et les bois qui l'environnent. Le palais impérial est entouré de vastes jardins publics. Les nombreux
+                musées de la ville proposent des expositions allant de l'art classique, au musée national de Tokyo, à un théâtre
+                kabuki reconstruit, au musée d'Edo-Tokyo.
+                À l'origine, Tokyo était un petit village de pêcheurs nommé Edo (« l'estuaire »). Fortifié au xve siècle, 
+                Edo devient la base militaire du shogun Tokugawa Ieyasu à la fin du xvie siècle, puis la capitale de son
+                gouvernement féodal. Durant l’époque d'Edo (1603-1868), la ville se développe et devient l'une des plus 
+                peuplées au monde à la fin du xviiie siècle, avec une population de près d'un million d'habitants. Avec 
+                la restauration de l'empereur en 1868, elle est confortée dans son rôle de cœur politique du Japon : le 
+                château d'Edo devient la résidence de l'empereur Meiji (Kōkyo), et la ville acquiert son nom actuel par 
+                opposition à Kyoto, l'ancienne capitale. Elle est ravagée en 1923 par un séisme de magnitude 7,9 qui 
+                fait plus de 100 000 morts. Durant la Seconde Guerre mondiale, elle est détruite pour moitié par des 
+                bombardements aériens américains. Les bombes incendiaires embrasent la ville et font plus de 100 000 
+                victimes. La ville est rapidement reconstruite après la guerre. Dans la seconde moitié du xxe siècle, Tokyo 
+                devient une métropole de rang mondial grâce à un fort développement industriel — notamment dans l'électronique
+                    —, et voit sa population multipliée par dix en cinquante ans.
+
+            </div>
+
+       
+
+        
+
+        
+
+    </div>
+
+
+   </section>
+
+   <section id="bottom_info">
+
+    <div id="bottom">
+
+      
+      <div id="stackcontainer">
+
+          <div class="li_contain">
+              <li class="list_title">Help</li>
+              <li><a href="#">Order state</a></li>
+              <li><a href="#">Shipment and delivery</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Contact us</a></li>
+              
+          </div>
+
+          <div class="li_contain">
+              <li class="list_title">About Climbin</li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Sponsorship</a></li>
+              <li><a href="#">Become a member</a></li>
+              <li><a href="#">Apply</a></li>
+              <li><a href="#">Climbin App</a></li>
+          </div>
+          
+
+
+          <div class="li_contain">
+              <li class="list_title">Follow Us</u></u></li>
+              <li><a href="#"><img src="ressources/twitter.svg" alt=""></a>
+              <a href="#"><img src="ressources/facebook.svg" alt=""></a></li>
+              <li><a href="#"><img src="ressources/instagram.svg" alt=""></a>
+              <a href="#"><img src="ressources/youtube.svg" alt=""></a></li>
+          </div>
+
+    </div>
+
+     </div>
+
+   
+
+
+
+
+  </section>
+
+</body>
+</html>
