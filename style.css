@@ -39,10 +39,29 @@ header{
     z-index: 1 ;
 }
 
+@media (max-width: 650px)
+{
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1 ;
+
+}
+
+}
+
+
 .logo{
-    max-height: 50px;
-    transform: translate(-50px);
-    margin: 0 0 0 70px;
+  height: 4vw;
+  transform: translate(-50px);
+  margin: 0 0 0 70px;
 }
 
 
@@ -86,7 +105,7 @@ header ul li a.active{
 }
 
 #hometext h1{
-font-size: clamp(1rem,10vw,7rem);
+font-size: 10vw;
 font-weight: 400;
 color: white;
 }
@@ -95,13 +114,13 @@ color: white;
 font-family: 'Josefin Sans', sans-serif;
 color: rgb(255, 255, 255);
 font-weight: 500;
-margin-bottom: min(1.2vw,-20px);
-font-size:max(3vw,15px);
+margin-bottom: -2.5vw;
+font-size: 3vw;
 }
 
 #hometext h3{
-margin-top: min(0.6vh,-10px);
-font-size: clamp(8px,2.8vw,25px);
+margin-top: -1.5vh;
+font-size: 2.8vw;
 color: white;
 font-weight: 400;
 }
